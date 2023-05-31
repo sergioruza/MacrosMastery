@@ -1,6 +1,6 @@
 <h1 align="center">:construction: Projeto em Desenvolvimento :construction:</h1>
 
-# MacroFlex
+# MacrosMastery
 
 ![MacrosMastery Logo](logo.png)
 
