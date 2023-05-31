@@ -4,16 +4,6 @@
 
 ![MacrosMastery Logo](logo.png)
 
- <details>
-    <summary><h2>:warning: **AVISO LEGAL** :warning:</h2></summary><br /
-
-  - Este projeto foi desenvolvido por um entusiasta amador da área da nutrição e não substitui o aconselhamento profissional de médicos ou nutricionistas. As informações fornecidas pelo projeto são apenas para fins educacionais e de referência geral.
-  - É importante ressaltar que cada pessoa é única e tem necessidades nutricionais individuais. O cálculo de macros e qualquer outra informação fornecida pelo projeto podem não ser adequados ou precisos para todas as pessoas.
-  - Recomendamos fortemente que você consulte um profissional de saúde qualificado, como um médico ou nutricionista, antes de fazer mudanças significativas em sua dieta ou seguir as informações fornecidas pelo projeto. Eles poderão avaliar sua saúde, necessidades específicas e fornecer orientações personalizadas.
-  - O autor deste projeto não assume nenhuma responsabilidade por quaisquer danos ou consequências causados pelo uso das informações fornecidas pelo projeto. O uso deste projeto é de total        responsabilidade do usuário.
-
-  </details>
-
 ## Objetivo
 O MacrosMastery é um projeto em desenvolvimento que tem como objetivo fornecer uma plataforma online para cálculo de macros de dieta flexível, acompanhamento de progresso e compartilhamento de informações relacionadas à nutrição.
 
@@ -46,6 +36,16 @@ Front-End
 [![react][react-card]][react-url]
 [![docker][docker-card]][docker-url]  
 Framework de Estilização (a ser definido)
+
+ <details>
+    <summary><h2>:warning: **AVISO LEGAL** :warning:</h2></summary><br /
+
+  - Este projeto foi desenvolvido por um entusiasta amador da área da nutrição e não substitui o aconselhamento profissional de médicos ou nutricionistas. As informações fornecidas pelo projeto são apenas para fins educacionais e de referência geral.
+  - É importante ressaltar que cada pessoa é única e tem necessidades nutricionais individuais. O cálculo de macros e qualquer outra informação fornecida pelo projeto podem não ser adequados ou precisos para todas as pessoas.
+  - Recomendamos fortemente que você consulte um profissional de saúde qualificado, como um médico ou nutricionista, antes de fazer mudanças significativas em sua dieta ou seguir as informações fornecidas pelo projeto. Eles poderão avaliar sua saúde, necessidades específicas e fornecer orientações personalizadas.
+  - O autor deste projeto não assume nenhuma responsabilidade por quaisquer danos ou consequências causados pelo uso das informações fornecidas pelo projeto. O uso deste projeto é de total        responsabilidade do usuário.
+
+  </details>
 
 
 [node.js-card]: https://img.shields.io/badge/-Node.js-80BC02?style=for-the-badge&logo=node.js&logoColor=black
