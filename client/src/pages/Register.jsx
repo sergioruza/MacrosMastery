@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { validateFields, validateEmail, validatePassword } from "../utils/validateLogin"
 
 function Login() {
   const [email, setEmail] = useState('')
@@ -6,9 +7,26 @@ function Login() {
   const [passwordConfirm, SetPasswordConfirm] = useState('')
   const [password, setPassword] = useState('')
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    if (!validateFields(email, emailConfirm, password, passwordConfirm)) {
+      return;
+    }
+
+    if (!validateEmail(email)) {
+      return;
+    }
+
+    if (!validatePassword(password)) {
+      return;
+    }
+  }
+
+
   return (
     <div>
-      <form>
+      <form onSubmit={handleSubmit}>
         <label>
           Email:
           <input
