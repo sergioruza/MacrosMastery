@@ -1,38 +1,22 @@
-import { useState } from "react"
-import { validateFields, validateEmail, validatePassword } from "../utils/validateLogin"
+import { useForm } from 'react-hook-form'
 
 function Login() {
-  const [email, setEmail] = useState('')
-  const [emailConfirm, setEmailConfirm] = useState('')
-  const [passwordConfirm, SetPasswordConfirm] = useState('')
-  const [password, setPassword] = useState('')
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  const { register, handleSubmit: onSubmit, watch, formState: { errors } } = useForm();
 
-    if (!validateFields(email, emailConfirm, password, passwordConfirm)) {
-      return;
-    }
-
-    if (!validateEmail(email)) {
-      return;
-    }
-
-    if (!validatePassword(password)) {
-      return;
-    }
+  const handleSubmit = (data) => {
+    console.log(data)
   }
 
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={onSubmit(handleSubmit)}>
         <label>
           Email:
           <input
             type="email"
-            value={email}
-            onChange={({ target }) => setEmail(target.value)}>
+            {...register('email')}>
           </input>
         </label>
 
@@ -40,8 +24,7 @@ function Login() {
           Confirme seu email:
           <input
             type="email"
-            value={emailConfirm}
-            onChange={({ target }) => setEmailConfirm(target.value)}>
+            {...register('emailConfirm')}>
           </input>
         </label>
 
@@ -49,8 +32,7 @@ function Login() {
           Senha:
           <input
             type="password"
-            value={password}
-            onChange={({ target }) => setPassword(target.value)}>
+            {...register('password')}>
           </input>
         </label>
 
@@ -58,8 +40,7 @@ function Login() {
           Confirme sua senha:
           <input
             type="password"
-            value={passwordConfirm}
-            onChange={({ target }) => SetPasswordConfirm(target.value)}>
+            {...register('passwordConfirm')}>
           </input>
         </label>
 
