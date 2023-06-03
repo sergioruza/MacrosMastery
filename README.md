@@ -3,7 +3,7 @@
 # MacrosMastery
 
 <fig>
-<img src="./images/logo-macros.png" alt="logo.png">
+<img width=250 src="./images/logo-macros.png" alt="logo.png">
 </fig>
 
 ## Objetivo
