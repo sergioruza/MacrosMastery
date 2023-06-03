@@ -2,7 +2,9 @@
 
 # MacrosMastery
 
-![MacrosMastery Logo](logo.png)
+<fig>
+<img width=250 src="./images/logo-macros.png" alt="logo.png">
+</fig>
 
 ## Objetivo
 O MacrosMastery é um projeto em desenvolvimento que tem como objetivo fornecer uma plataforma online para cálculo de macros de dieta flexível, acompanhamento de progresso e compartilhamento de informações relacionadas à nutrição.
