@@ -1,26 +1,25 @@
-import { useForm } from 'react-hook-form'
-import { yupResolver } from '@hookform/resolvers/yup'
+import { useForm } from 'react-hook-form';
+import { yupResolver } from '@hookform/resolvers/yup';
 import schema from '../validations/schemaValidationRegister';
 
-function Login() {
-
-  const { register, handleSubmit: onSubmit, formState: { errors } } = useForm({ resolver: yupResolver(schema) });
-
-
+function Register() {
+  const { register,
+    handleSubmit: onSubmit,
+    formState: { errors },
+  } = useForm({ resolver: yupResolver(schema) });
 
   const handleSubmit = (data) => {
-    console.log(data)
-  }
-
+    console.log(data);
+  };
 
   return (
     <div>
-      <form onSubmit={onSubmit(handleSubmit)}>
+      <form onSubmit={ onSubmit(handleSubmit) }>
         <label>
           Nome:
           <input
-            {...register('name')}>
-          </input>
+            { ...register('name') }
+          />
           <span>{errors?.name?.message}</span>
         </label>
         <br />
@@ -28,8 +27,8 @@ function Login() {
         <label>
           Email:
           <input
-            {...register('email')}>
-          </input>
+            { ...register('email') }
+          />
           <span>{errors?.email?.message}</span>
         </label>
         <br />
@@ -37,8 +36,8 @@ function Login() {
         <label>
           Confirme seu email:
           <input
-            {...register('emailConfirm')}>
-          </input>
+            { ...register('emailConfirm') }
+          />
           <span>{errors?.emailConfirm?.message}</span>
         </label>
         <br />
@@ -47,8 +46,8 @@ function Login() {
           Senha:
           <input
             type="password"
-            {...register('password')}>
-          </input>
+            { ...register('password') }
+          />
           <span>{errors?.password?.message}</span>
         </label>
         <br />
@@ -57,8 +56,8 @@ function Login() {
           Confirme sua senha:
           <input
             type="password"
-            {...register('passwordConfirm')}>
-          </input>
+            { ...register('passwordConfirm') }
+          />
           <span>{errors?.passwordConfirm?.message}</span>
         </label>
         <br />
@@ -66,7 +65,7 @@ function Login() {
         <button type="submit">Entrar</button>
       </form>
     </div>
-  )
+  );
 }
 
-export default Login
+export default Register;
