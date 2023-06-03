@@ -1,22 +1,27 @@
 {
-  "extends": ["trybe-frontend"],
-  "overrides": [
-    {
-      "files": ["src/tests/**/*.js"],
-      "rules": {
-        "max-len": [
-          "error",
-          {
-            "code": 90,
-            "ignoreComments": true,
-            "ignoreUrls": true,
-            "ignoreRegExpLiterals": true,
-            "ignoreStrings": true
-          }
-        ],
-        "max-lines": [ "off" ],
-        "no-magic-numbers": ["on"]
-      }
+  "env": {
+    "browser": true,
+    "es2020": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:react-hooks/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "settings": {
+    "react": {
+      "version": "18.2"
     }
-  ]
+  },
+  "plugins": [
+    "react-refresh"
+  ],
+  "rules": {
+    "react-refresh/only-export-components": "warn"
+  }
 }
